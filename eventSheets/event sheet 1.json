@@ -904,11 +904,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-animation-frame",
+					"id": "set-animation",
 					"objectClass": "Laser",
-					"sid": 560369248892340,
+					"sid": 120928506343891,
 					"parameters": {
-						"frame-number": "1"
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
 					}
 				},
 				{
@@ -929,11 +930,12 @@
 					}
 				},
 				{
-					"id": "set-animation-frame",
+					"id": "set-animation",
 					"objectClass": "Laser",
-					"sid": 741435768067944,
+					"sid": 216826601660814,
 					"parameters": {
-						"frame-number": "0"
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
 					}
 				},
 				{
