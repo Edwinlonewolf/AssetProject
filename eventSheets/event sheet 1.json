@@ -79,6 +79,15 @@
 						"x": "Mouse.X",
 						"y": "Mouse.Y"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 372815516246953,
+					"parameters": {
+						"x": "lerp(Self.X, Hero.X, 0.03)",
+						"y": "lerp(Self.Y, Hero.Y-100, 0.03 )"
+					}
 				}
 			],
 			"sid": 528960959325655
@@ -396,11 +405,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 227841258262350,
+					"sid": 183773981588336,
 					"parameters": {
 						"variable": "ShotgunTimer",
 						"comparison": 5,
-						"value": "3"
+						"value": "1"
 					}
 				}
 			],
@@ -573,11 +582,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 704622699221161,
+					"sid": 577341360999172,
 					"parameters": {
 						"variable": "SniperTimer",
 						"comparison": 5,
-						"value": "5"
+						"value": "3"
 					}
 				}
 			],
@@ -636,6 +645,94 @@
 				}
 			],
 			"sid": 299670897949482
+		},
+		{
+			"eventType": "comment",
+			"text": "Walls"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet",
+					"sid": 492358246432967,
+					"parameters": {
+						"object": "Walls"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Bullet",
+					"sid": 700173583544775
+				}
+			],
+			"sid": 109917827364596
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet2",
+					"sid": 819733121621533,
+					"parameters": {
+						"object": "Walls"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Bullet2",
+					"sid": 252569444674168
+				}
+			],
+			"sid": 867763853133190
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet3",
+					"sid": 348560617550329,
+					"parameters": {
+						"object": "Walls"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Bullet3",
+					"sid": 652340338058000
+				}
+			],
+			"sid": 233099187209612
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 725202339680505,
+					"parameters": {
+						"object": "Walls"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PlayerBullet",
+					"sid": 590738514543824
+				}
+			],
+			"sid": 123719256317893
 		}
 	],
 	"sid": 928993267018031

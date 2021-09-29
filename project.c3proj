@@ -53,6 +53,22 @@
 			"author": "Scirra",
 			"version": "r260",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
 		}
 	],
 	"uniqueId": "n2anp73rhuk",
@@ -67,7 +83,9 @@
 			"Keyboard",
 			"Bullet2",
 			"Bullet3",
-			"PlayerBullet"
+			"PlayerBullet",
+			"Walls",
+			"Camera"
 		],
 		"subfolders": []
 	},
