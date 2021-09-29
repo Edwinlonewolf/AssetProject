@@ -1,0 +1,642 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SniperTimer",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 497585102696223
+		},
+		{
+			"eventType": "variable",
+			"name": "ShotgunTimer",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 355798769155601
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 683594570609977
+				}
+			],
+			"actions": [
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Handgunner",
+					"sid": 252071069792659,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Hero"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Sniper",
+					"sid": 146032844954194,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Hero"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Shotgun",
+					"sid": 819476394160835,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Hero"
+					}
+				}
+			],
+			"sid": 792560581812205
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 891280465400274
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Hero",
+					"sid": 644785134106984,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 528960959325655
+		},
+		{
+			"eventType": "comment",
+			"text": "player controls"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 601378167491228,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Hero",
+					"sid": 160558852565499,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 678602185566627
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 316244764421373,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Hero",
+					"sid": 356205003147693,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 342781065769577
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 552458810960403,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Hero",
+					"sid": 718749405249918,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 459323470156364
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 280771946055017,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Hero",
+					"sid": 670365322586165,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 419911011466072
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 201526196696972,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Hero",
+					"sid": 255483166512938,
+					"parameters": {
+						"object": "PlayerBullet",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 175642026925884
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 179576417415276,
+					"parameters": {
+						"object": "Handgunner"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Handgunner",
+					"sid": 376696980272853,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 229421826892449
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 477438555486011,
+					"parameters": {
+						"object": "Sniper"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Sniper",
+					"sid": 518502125916873,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 655751416856830
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 138095142496812,
+					"parameters": {
+						"object": "Shotgun"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Shotgun",
+					"sid": 111426155696374,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 801996541927587
+		},
+		{
+			"eventType": "comment",
+			"text": "Standard shooting mode for hand gunner"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Handgunner",
+					"sid": 363250672995646,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Handgunner",
+					"sid": 292986928869667,
+					"parameters": {
+						"object": "Bullet",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 810383607195546
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Handgunner",
+					"sid": 497269991501842,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Handgunner",
+					"sid": 475952451074867
+				}
+			],
+			"sid": 777807138925820
+		},
+		{
+			"eventType": "comment",
+			"text": "Standard shotgun mode"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Shotgun",
+					"sid": 515177142454106,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Shotgun",
+					"sid": 954624688390043,
+					"parameters": {
+						"x": "Hero.X",
+						"y": "Hero.Y"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Shotgun",
+					"sid": 395771202578524,
+					"parameters": {
+						"instance-variable": "BoomStick",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 204381519239733
+		},
+		{
+			"eventType": "comment",
+			"text": "to change spread set bullet.angle +or- the angle degrees. to add pellets make more bullets make more bullets"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Shotgun",
+					"sid": 232127599169564,
+					"parameters": {
+						"instance-variable": "BoomStick"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 227841258262350,
+					"parameters": {
+						"variable": "ShotgunTimer",
+						"comparison": 5,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Shotgun",
+					"sid": 191832551818746,
+					"parameters": {
+						"object": "Bullet",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Shotgun",
+					"sid": 902872588822382,
+					"parameters": {
+						"object": "Bullet2",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Bullet2",
+					"sid": 263280904805360,
+					"parameters": {
+						"angle": "Bullet.Angle -22"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Shotgun",
+					"sid": 942515025801807,
+					"parameters": {
+						"object": "Bullet3",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Bullet3",
+					"sid": 716743853500595,
+					"parameters": {
+						"angle": "Bullet.Angle+22"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 213621239666660,
+					"parameters": {
+						"variable": "ShotgunTimer",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 701405717947217
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 459420772106374,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 715251819279146,
+					"parameters": {
+						"variable": "SniperTimer",
+						"value": "1"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 912542705549116,
+					"parameters": {
+						"variable": "ShotgunTimer",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 528048992982885
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shotgun",
+					"sid": 590640923526507,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Shotgun",
+					"sid": 247354367454986
+				}
+			],
+			"sid": 429136753014400
+		},
+		{
+			"eventType": "comment",
+			"text": "standard sniper"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Sniper",
+					"sid": 614048841417473,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Sniper",
+					"sid": 857822074706275,
+					"parameters": {
+						"x": "Hero.X",
+						"y": "Hero.Y"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Sniper",
+					"sid": 337802738602927,
+					"parameters": {
+						"instance-variable": "FazeClan",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 859025128169545
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Sniper",
+					"sid": 453651225602229,
+					"parameters": {
+						"instance-variable": "FazeClan"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 704622699221161,
+					"parameters": {
+						"variable": "SniperTimer",
+						"comparison": 5,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Sniper",
+					"sid": 452668212266934,
+					"parameters": {
+						"object": "Bullet",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Bullet",
+					"sid": 427524394783100,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "600"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 517674827345812,
+					"parameters": {
+						"variable": "SniperTimer",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 240994292420320
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sniper",
+					"sid": 129607209035215,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sniper",
+					"sid": 696122072991915
+				}
+			],
+			"sid": 299670897949482
+		}
+	],
+	"sid": 928993267018031
+}

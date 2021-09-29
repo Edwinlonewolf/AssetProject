@@ -1,0 +1,62 @@
+{
+	"name": "Shotgun",
+	"plugin-id": "Sprite",
+	"sid": 701946941077607,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "BoomStick",
+			"type": "boolean",
+			"desc": "",
+			"sid": 754168553104488
+		},
+		{
+			"name": "Range",
+			"type": "number",
+			"desc": "",
+			"sid": 442004047557070
+		},
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"sid": 957687445918381
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 133191020283329
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.6,
+						"originY": 0.524,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2460681,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 531468045576922,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
