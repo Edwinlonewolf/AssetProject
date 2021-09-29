@@ -1,0 +1,9 @@
+{
+	"name": "HealthStatus",
+	"plugin-id": "Text",
+	"sid": 327923513343004,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

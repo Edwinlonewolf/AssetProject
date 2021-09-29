@@ -13,6 +13,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "HeroHealth",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 552785018241906
+		},
+		{
+			"eventType": "variable",
 			"name": "ShotgunTimer",
 			"type": "number",
 			"initialValue": "0",
@@ -87,6 +97,14 @@
 					"parameters": {
 						"x": "lerp(Self.X, Hero.X, 0.03)",
 						"y": "lerp(Self.Y, Hero.Y-100, 0.03 )"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "HealthStatus",
+					"sid": 811140972024043,
+					"parameters": {
+						"text": "\"Health : \" & HeroHealth"
 					}
 				}
 			],
@@ -733,6 +751,144 @@
 				}
 			],
 			"sid": 123719256317893
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet",
+					"sid": 447644956317340,
+					"parameters": {
+						"object": "Hero"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Bullet",
+					"sid": 923161473150951
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 248530277554818,
+					"parameters": {
+						"variable": "HeroHealth",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 515152360003634
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet2",
+					"sid": 956497484809834,
+					"parameters": {
+						"object": "Hero"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Bullet2",
+					"sid": 233967681657120
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 346821490240180,
+					"parameters": {
+						"variable": "HeroHealth",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 316772556325674
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bullet3",
+					"sid": 777826930159202,
+					"parameters": {
+						"object": "Hero"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Bullet3",
+					"sid": 699143836874869
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 658203922188477,
+					"parameters": {
+						"variable": "HeroHealth",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 560119329966916
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 138377087335718,
+					"parameters": {
+						"variable": "HeroHealth",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Hero",
+					"sid": 402585784573467
+				}
+			],
+			"sid": 927103827422086
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Spikes",
+					"sid": 647965455618952,
+					"parameters": {
+						"object": "Hero"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 981645709126947,
+					"parameters": {
+						"variable": "HeroHealth",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 965710677486641
 		}
 	],
 	"sid": 928993267018031

@@ -31,6 +31,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
@@ -85,7 +93,9 @@
 			"Bullet3",
 			"PlayerBullet",
 			"Walls",
-			"Camera"
+			"Camera",
+			"HealthStatus",
+			"Spikes"
 		],
 		"subfolders": []
 	},
