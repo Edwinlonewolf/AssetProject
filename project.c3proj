@@ -95,7 +95,10 @@
 			"Walls",
 			"Camera",
 			"HealthStatus",
-			"Spikes"
+			"Spikes",
+			"Medkit",
+			"Laser",
+			"Activationbutton"
 		],
 		"subfolders": []
 	},

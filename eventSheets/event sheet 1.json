@@ -889,6 +889,64 @@
 				}
 			],
 			"sid": 965710677486641
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Hero",
+					"sid": 132314068968145,
+					"parameters": {
+						"object": "Activationbutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Laser",
+					"sid": 560369248892340,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Laser",
+					"sid": 339242649943023,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 848899679774168,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Laser",
+					"sid": 741435768067944,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Laser",
+					"sid": 195104029321011,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 472036676292972
 		}
 	],
 	"sid": 928993267018031
