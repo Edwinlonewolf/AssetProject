@@ -30,8 +30,8 @@
 						}
 					},
 					"world": {
-						"x": 61,
-						"y": 72,
+						"x": 929,
+						"y": 627,
 						"width": 50,
 						"height": 50,
 						"originX": 0.544,
@@ -440,8 +440,8 @@
 						}
 					},
 					"world": {
-						"x": 59,
-						"y": 71,
+						"x": 927,
+						"y": 626,
 						"width": 50,
 						"height": 50,
 						"originX": 0.5,
@@ -999,6 +999,90 @@
 						"y": 144,
 						"width": 87.17797887081349,
 						"height": 87.17797887081349,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Launcher",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 33,
+					"instanceVariables": {},
+					"behaviors": {
+						"Turret": {
+							"properties": {
+								"range": 700,
+								"rate-of-fire": 1,
+								"rotate": false,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 823,
+						"y": 112,
+						"width": 95.4358423235212,
+						"height": 95.4358423235212,
+						"originX": 0.492,
+						"originY": 0.556,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Missile",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 641,
+						"y": -103,
+						"width": 63.31999999999999,
+						"height": 36.11111111111111,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

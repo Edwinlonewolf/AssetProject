@@ -67,6 +67,15 @@
 					"parameters": {
 						"target": "Hero"
 					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Launcher",
+					"sid": 347605793408895,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Hero"
+					}
 				}
 			],
 			"sid": 792560581812205
@@ -663,6 +672,127 @@
 				}
 			],
 			"sid": 299670897949482
+		},
+		{
+			"eventType": "comment",
+			"text": "Missile Launcher"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Launcher",
+					"sid": 136164130873112,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Launcher",
+					"sid": 341924222601786,
+					"parameters": {
+						"object": "Missile",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Missile",
+					"sid": 712119089963110,
+					"parameters": {
+						"x": "Hero.X",
+						"y": "Hero.Y"
+					}
+				}
+			],
+			"sid": 800736894288546
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-distance-travelled",
+					"objectClass": "Missile",
+					"sid": 484583326905060,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 5,
+						"distance": "(Launcher.X+50)"
+					}
+				},
+				{
+					"id": "compare-distance-travelled",
+					"objectClass": "Missile",
+					"sid": 178510978082206,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 3,
+						"distance": "Launcher.Y-50\n"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Missile",
+					"sid": 218461550110824,
+					"parameters": {
+						"object": "Bullet",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Missile",
+					"sid": 162729787257291,
+					"parameters": {
+						"object": "Bullet2",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Bullet2",
+					"sid": 438912002522077,
+					"parameters": {
+						"angle": "Bullet.Angle+45"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Missile",
+					"sid": 829314562447495,
+					"parameters": {
+						"object": "Bullet3",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Bullet2",
+					"sid": 409668890202891,
+					"parameters": {
+						"angle": "Bullet.Angle-45"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Missile",
+					"sid": 988379787262187
+				}
+			],
+			"sid": 607429544498203,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "comment",

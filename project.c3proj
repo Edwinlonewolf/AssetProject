@@ -98,7 +98,9 @@
 			"Spikes",
 			"Medkit",
 			"Laser",
-			"Activationbutton"
+			"Activationbutton",
+			"Missile",
+			"Launcher"
 		],
 		"subfolders": []
 	},
