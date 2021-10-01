@@ -100,14 +100,20 @@
 			"Laser",
 			"Activationbutton",
 			"Missile",
-			"Launcher"
+			"Launcher",
+			"Bullet4",
+			"Bullet5",
+			"Bullet6",
+			"Bullet7"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Bullets"
+		],
 		"subfolders": []
 	},
 	"layouts": {

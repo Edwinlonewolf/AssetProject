@@ -1,0 +1,17 @@
+{
+	"name": "Bullets",
+	"plugin-id": "Sprite",
+	"sid": 611712821965282,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Bullet7",
+		"Bullet",
+		"Bullet2",
+		"Bullet3",
+		"Bullet4",
+		"Bullet5",
+		"Bullet6"
+	]
+}

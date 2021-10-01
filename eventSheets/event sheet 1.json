@@ -717,21 +717,11 @@
 				{
 					"id": "compare-distance-travelled",
 					"objectClass": "Missile",
-					"sid": 484583326905060,
+					"sid": 209684794277495,
 					"behaviorType": "Bullet",
 					"parameters": {
 						"comparison": 5,
-						"distance": "(Launcher.X+50)"
-					}
-				},
-				{
-					"id": "compare-distance-travelled",
-					"objectClass": "Missile",
-					"sid": 178510978082206,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"comparison": 3,
-						"distance": "Launcher.Y-50\n"
+						"distance": "(Launcher.Turret.Range-300)"
 					}
 				}
 			],
@@ -745,6 +735,14 @@
 						"layer": "0",
 						"image-point": "0",
 						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Bullet",
+					"sid": 597635118160041,
+					"parameters": {
+						"angle": "Hero.Angle"
 					}
 				},
 				{
@@ -779,10 +777,86 @@
 				},
 				{
 					"id": "set-angle",
-					"objectClass": "Bullet2",
-					"sid": 409668890202891,
+					"objectClass": "Bullet3",
+					"sid": 496993237284910,
 					"parameters": {
-						"angle": "Bullet.Angle-45"
+						"angle": "Bullet2.Angle+45"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Missile",
+					"sid": 951428916486579,
+					"parameters": {
+						"object": "Bullet4",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Bullet4",
+					"sid": 564155886301374,
+					"parameters": {
+						"angle": "Bullet3.Angle+45"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Missile",
+					"sid": 683405705919578,
+					"parameters": {
+						"object": "Bullet5",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Bullet5",
+					"sid": 514771254096627,
+					"parameters": {
+						"angle": "Bullet4.Angle+45"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Missile",
+					"sid": 329739434130642,
+					"parameters": {
+						"object": "Bullet6",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Bullet6",
+					"sid": 778157082651422,
+					"parameters": {
+						"angle": "Bullet5.Angle+45"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Missile",
+					"sid": 770587725548726,
+					"parameters": {
+						"object": "Bullet7",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Bullet7",
+					"sid": 966261386120554,
+					"parameters": {
+						"angle": "Bullet6.Angle+45"
 					}
 				},
 				{
@@ -803,8 +877,8 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Bullet",
-					"sid": 492358246432967,
+					"objectClass": "Bullets",
+					"sid": 246835963431511,
 					"parameters": {
 						"object": "Walls"
 					}
@@ -813,8 +887,8 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Bullet",
-					"sid": 700173583544775
+					"objectClass": "Bullets",
+					"sid": 353378056306394
 				}
 			],
 			"sid": 109917827364596
@@ -824,71 +898,8 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Bullet2",
-					"sid": 819733121621533,
-					"parameters": {
-						"object": "Walls"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Bullet2",
-					"sid": 252569444674168
-				}
-			],
-			"sid": 867763853133190
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Bullet3",
-					"sid": 348560617550329,
-					"parameters": {
-						"object": "Walls"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Bullet3",
-					"sid": 652340338058000
-				}
-			],
-			"sid": 233099187209612
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "PlayerBullet",
-					"sid": 725202339680505,
-					"parameters": {
-						"object": "Walls"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "PlayerBullet",
-					"sid": 590738514543824
-				}
-			],
-			"sid": 123719256317893
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Bullet",
-					"sid": 447644956317340,
+					"objectClass": "Bullets",
+					"sid": 455265521610331,
 					"parameters": {
 						"object": "Hero"
 					}
@@ -897,80 +908,20 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Bullet",
-					"sid": 923161473150951
+					"objectClass": "Bullets",
+					"sid": 285008654947157
 				},
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 248530277554818,
+					"sid": 671821764041279,
 					"parameters": {
 						"variable": "HeroHealth",
 						"value": "1"
 					}
 				}
 			],
-			"sid": 515152360003634
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Bullet2",
-					"sid": 956497484809834,
-					"parameters": {
-						"object": "Hero"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Bullet2",
-					"sid": 233967681657120
-				},
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 346821490240180,
-					"parameters": {
-						"variable": "HeroHealth",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 316772556325674
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Bullet3",
-					"sid": 777826930159202,
-					"parameters": {
-						"object": "Hero"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Bullet3",
-					"sid": 699143836874869
-				},
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 658203922188477,
-					"parameters": {
-						"variable": "HeroHealth",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 560119329966916
+			"sid": 654085905219239
 		},
 		{
 			"eventType": "block",
