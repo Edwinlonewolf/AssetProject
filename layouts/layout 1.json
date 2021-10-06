@@ -32,8 +32,8 @@
 					"world": {
 						"x": 51,
 						"y": 156,
-						"width": 50,
-						"height": 50,
+						"width": 60,
+						"height": 60,
 						"originX": 0.544,
 						"originY": 0.532,
 						"color": [
@@ -78,8 +78,8 @@
 					"world": {
 						"x": 410,
 						"y": 67,
-						"width": 50,
-						"height": 50,
+						"width": 60,
+						"height": 60,
 						"originX": 0.608,
 						"originY": 0.5,
 						"color": [
@@ -166,8 +166,8 @@
 					"world": {
 						"x": 131,
 						"y": 521,
-						"width": 50,
-						"height": 50,
+						"width": 60,
+						"height": 60,
 						"originX": 0.6,
 						"originY": 0.524,
 						"color": [
@@ -212,8 +212,8 @@
 					"world": {
 						"x": 1188,
 						"y": 105,
-						"width": 50,
-						"height": 50,
+						"width": 60,
+						"height": 60,
 						"originX": 0.596,
 						"originY": 0.5,
 						"color": [
