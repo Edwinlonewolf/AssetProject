@@ -1138,6 +1138,11 @@
 					"id": "restart-layout",
 					"objectClass": "System",
 					"sid": 358294347653545
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 408378966855123
 				}
 			],
 			"sid": 710278452327094
