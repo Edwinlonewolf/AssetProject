@@ -247,6 +247,18 @@
 						"image-point": "0",
 						"create-hierarchy": false
 					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 157953241975571,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"Handgun\"",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 175642026925884
@@ -350,6 +362,18 @@
 						"layer": "0",
 						"image-point": "1",
 						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 837643212418329,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"Handgun\"",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -498,6 +522,18 @@
 						"variable": "ShotgunTimer",
 						"value": "0"
 					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 186792453608473,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"HeavyGun\"",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 701405717947217
@@ -645,6 +681,18 @@
 					"parameters": {
 						"variable": "SniperTimer",
 						"value": "0"
+					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 526054166791881,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"HeavyGun\"",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -1026,6 +1074,18 @@
 					"behaviorType": "Solid",
 					"parameters": {
 						"state": "enabled"
+					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 907272353117844,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"Electricfence\"",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
