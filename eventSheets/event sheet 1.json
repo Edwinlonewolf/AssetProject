@@ -1090,6 +1090,57 @@
 				}
 			],
 			"sid": 472036676292972
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Hero",
+					"sid": 460980407465586,
+					"parameters": {
+						"object": "Medkit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 599823947877926,
+					"parameters": {
+						"variable": "HeroHealth",
+						"value": "3"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Medkit",
+					"sid": 956417782370025
+				}
+			],
+			"sid": 703507918453942
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 215128034618587,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 358294347653545
+				}
+			],
+			"sid": 710278452327094
 		}
 	],
 	"sid": 928993267018031
