@@ -1029,6 +1029,14 @@
 					"parameters": {
 						"object": "Activationbutton"
 					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 742824392241055,
+					"parameters": {
+						"object": "Activationbutton"
+					}
 				}
 			],
 			"actions": [
@@ -1089,7 +1097,8 @@
 					}
 				}
 			],
-			"sid": 472036676292972
+			"sid": 472036676292972,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -1146,6 +1155,27 @@
 				}
 			],
 			"sid": 710278452327094
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 945853855014631,
+					"parameters": {
+						"object": "Walls"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PlayerBullet",
+					"sid": 882100782616024
+				}
+			],
+			"sid": 918368701400734
 		}
 	],
 	"sid": 928993267018031
