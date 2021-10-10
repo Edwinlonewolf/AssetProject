@@ -1230,6 +1230,32 @@
 				}
 			],
 			"sid": 608003196520473
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "Hero",
+					"sid": 438015513975813,
+					"parameters": {
+						"object": "Laser",
+						"offset-x": "-20",
+						"offset-y": "-20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 563032365989384,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 964179773428900
 		}
 	],
 	"sid": 928993267018031
