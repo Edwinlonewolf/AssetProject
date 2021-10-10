@@ -128,13 +128,12 @@
 		"subfolders": []
 	},
 	"layouts": {
-		"items": [
-			"Level 2 by Daniel"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
-					"Level 1 by Edwin"
+					"Level 1 by Edwin",
+					"Level 2 by Daniel"
 				],
 				"subfolders": [],
 				"name": "Easy Levels"
