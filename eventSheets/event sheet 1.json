@@ -398,6 +398,15 @@
 					"id": "destroy",
 					"objectClass": "Handgunner",
 					"sid": 475952451074867
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Laser",
+					"sid": 776149414128298,
+					"parameters": {
+						"instance-variable": "EnemiesDestroyed",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 777807138925820
@@ -591,6 +600,15 @@
 					"id": "destroy",
 					"objectClass": "Shotgun",
 					"sid": 247354367454986
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Laser",
+					"sid": 830528317875254,
+					"parameters": {
+						"instance-variable": "EnemiesDestroyed",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 429136753014400
@@ -717,6 +735,15 @@
 					"id": "destroy",
 					"objectClass": "Sniper",
 					"sid": 696122072991915
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Laser",
+					"sid": 575972545369302,
+					"parameters": {
+						"instance-variable": "EnemiesDestroyed",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 299670897949482
@@ -1176,6 +1203,33 @@
 				}
 			],
 			"sid": 918368701400734
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Laser",
+					"sid": 996302846161349,
+					"parameters": {
+						"instance-variable": "EnemiesDestroyed",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Laser",
+					"sid": 106231767203621,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 608003196520473
 		}
 	],
 	"sid": 928993267018031
