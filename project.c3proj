@@ -122,7 +122,8 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"Bullets"
+			"Bullets",
+			"Enemies"
 		],
 		"subfolders": []
 	},
