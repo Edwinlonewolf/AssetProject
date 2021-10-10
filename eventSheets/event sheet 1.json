@@ -1176,31 +1176,6 @@
 				}
 			],
 			"sid": 918368701400734
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-destroyed",
-					"objectClass": "Enemies",
-					"sid": 623264688527861
-				}
-			],
-			"actions": [
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 993929395336655,
-					"parameters": {
-						"object-to-create": "Laser",
-						"layer": "0",
-						"x": "0",
-						"y": "0",
-						"create-hierarchy": false
-					}
-				}
-			],
-			"sid": 989489743826303
 		}
 	],
 	"sid": 928993267018031
