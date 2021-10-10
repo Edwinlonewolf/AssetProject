@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 302269739680405,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "EnemiesKilled",
+			"type": "number",
+			"desc": "",
+			"sid": 710099304128697
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "EightDir",

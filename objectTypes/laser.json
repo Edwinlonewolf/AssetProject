@@ -3,14 +3,7 @@
 	"plugin-id": "Sprite",
 	"sid": 783777777452415,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "EnemiesDestroyed",
-			"type": "number",
-			"desc": "",
-			"sid": 556746551142232
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",

@@ -401,10 +401,10 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Laser",
-					"sid": 776149414128298,
+					"objectClass": "Hero",
+					"sid": 381769130578131,
 					"parameters": {
-						"instance-variable": "EnemiesDestroyed",
+						"instance-variable": "EnemiesKilled",
 						"value": "1"
 					}
 				}
@@ -603,10 +603,10 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Laser",
-					"sid": 830528317875254,
+					"objectClass": "Hero",
+					"sid": 449066322896874,
 					"parameters": {
-						"instance-variable": "EnemiesDestroyed",
+						"instance-variable": "EnemiesKilled",
 						"value": "1"
 					}
 				}
@@ -738,10 +738,10 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Laser",
-					"sid": 575972545369302,
+					"objectClass": "Hero",
+					"sid": 558031773117086,
 					"parameters": {
-						"instance-variable": "EnemiesDestroyed",
+						"instance-variable": "EnemiesKilled",
 						"value": "1"
 					}
 				}
@@ -1209,12 +1209,22 @@
 			"conditions": [
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Laser",
-					"sid": 996302846161349,
+					"objectClass": "Hero",
+					"sid": 401131390170553,
 					"parameters": {
-						"instance-variable": "EnemiesDestroyed",
-						"comparison": 0,
+						"instance-variable": "EnemiesKilled",
+						"comparison": 5,
 						"value": "7"
+					}
+				},
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "Hero",
+					"sid": 194525212846158,
+					"parameters": {
+						"object": "Laser",
+						"offset-x": "-20",
+						"offset-y": "-20"
 					}
 				}
 			],
@@ -1227,35 +1237,17 @@
 						"animation": "\"Animation 2\"",
 						"from": "beginning"
 					}
-				}
-			],
-			"sid": 608003196520473
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-at-offset",
-					"objectClass": "Hero",
-					"sid": 438015513975813,
-					"parameters": {
-						"object": "Laser",
-						"offset-x": "-20",
-						"offset-y": "-20"
-					}
-				}
-			],
-			"actions": [
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 630528312652192,
+					"sid": 657552205210942,
 					"parameters": {
-						"layout": "Level 2"
+						"layout": "Level 2 by Daniel"
 					}
 				}
 			],
-			"sid": 964179773428900
+			"sid": 608003196520473
 		}
 	],
 	"sid": 928993267018031
