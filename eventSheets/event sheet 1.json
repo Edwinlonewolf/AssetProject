@@ -1247,11 +1247,11 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-nextprevious-layout",
+					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 563032365989384,
+					"sid": 630528312652192,
 					"parameters": {
-						"which": "next"
+						"layout": "Level 2"
 					}
 				}
 			],

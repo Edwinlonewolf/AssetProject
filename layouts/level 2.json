@@ -1,5 +1,5 @@
 {
-	"name": "Layout 1",
+	"name": "Level 2",
 	"layers": [
 		{
 			"name": "Background",
@@ -14,7 +14,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 4,
+					"uid": 63,
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
@@ -55,7 +55,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 9,
+					"uid": 64,
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
@@ -96,7 +96,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 10,
+					"uid": 65,
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
@@ -137,7 +137,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 11,
+					"uid": 66,
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
@@ -178,7 +178,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 12,
+					"uid": 67,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -214,7 +214,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 13,
+					"uid": 68,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -250,7 +250,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 14,
+					"uid": 69,
 					"instanceVariables": {},
 					"behaviors": {
 						"ScrollTo": {
@@ -285,7 +285,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 15,
+					"uid": 70,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -321,7 +321,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 16,
+					"uid": 71,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -357,7 +357,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 17,
+					"uid": 72,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -393,7 +393,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 18,
+					"uid": 73,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -429,7 +429,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 19,
+					"uid": 74,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -465,7 +465,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 20,
+					"uid": 75,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -501,7 +501,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 21,
+					"uid": 76,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -537,7 +537,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 22,
+					"uid": 77,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -573,7 +573,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 23,
+					"uid": 78,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -609,7 +609,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 24,
+					"uid": 79,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -645,7 +645,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 25,
+					"uid": 80,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -681,7 +681,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 26,
+					"uid": 81,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -717,7 +717,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 28,
+					"uid": 82,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -746,7 +746,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 30,
+					"uid": 83,
 					"instanceVariables": {
 						"EnemiesDestroyed": 0
 					},
@@ -784,7 +784,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 31,
+					"uid": 84,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -813,7 +813,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 32,
+					"uid": 85,
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
@@ -854,7 +854,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 34,
+					"uid": 86,
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
@@ -895,7 +895,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 35,
+					"uid": 87,
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
@@ -936,7 +936,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 36,
+					"uid": 88,
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
@@ -977,7 +977,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 37,
+					"uid": 89,
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
@@ -1018,7 +1018,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 39,
+					"uid": 90,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1054,7 +1054,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 49,
+					"uid": 91,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1090,7 +1090,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 51,
+					"uid": 92,
 					"instanceVariables": {
 						"EnemiesDestroyed": 0
 					},
@@ -1128,7 +1128,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 50,
+					"uid": 93,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1157,7 +1157,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 44,
+					"uid": 94,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1186,7 +1186,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 40,
+					"uid": 95,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1222,7 +1222,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 42,
+					"uid": 96,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1258,7 +1258,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 43,
+					"uid": 97,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1287,7 +1287,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 46,
+					"uid": 98,
 					"instanceVariables": {
 						"Pistol": false,
 						"Health": 3
@@ -1333,7 +1333,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 47,
+					"uid": 99,
 					"instanceVariables": {
 						"FazeClan": false,
 						"Health": 3
@@ -1379,7 +1379,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 45,
+					"uid": 100,
 					"instanceVariables": {
 						"EnemiesDestroyed": 0
 					},
@@ -1417,7 +1417,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 62,
+					"uid": 101,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1453,7 +1453,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 48,
+					"uid": 102,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1481,7 +1481,7 @@
 					}
 				}
 			],
-			"sid": 925114901514069,
+			"sid": 985128329934566,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1533,7 +1533,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 27,
+					"uid": 103,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1562,7 +1562,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 41,
+					"uid": 104,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1598,7 +1598,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 52,
+					"uid": 105,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1627,7 +1627,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 54,
+					"uid": 106,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1656,7 +1656,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 55,
+					"uid": 107,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1692,7 +1692,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 56,
+					"uid": 108,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1728,7 +1728,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 57,
+					"uid": 109,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1764,7 +1764,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 58,
+					"uid": 110,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1800,7 +1800,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 59,
+					"uid": 111,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1836,7 +1836,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 60,
+					"uid": 112,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1864,7 +1864,7 @@
 					}
 				}
 			],
-			"sid": 456033038061771,
+			"sid": 778683225538774,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1903,12 +1903,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 29,
+					"uid": 113,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 719,
-						"y": 392,
+						"x": 695,
+						"y": 623,
 						"width": 64.17797887081349,
 						"height": 75.17797887081349,
 						"originX": 0.5,
@@ -1919,12 +1919,12 @@
 							1,
 							1
 						],
-						"angle": 5.815470317935744,
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
 			],
-			"sid": 632360355193540,
+			"sid": 340061599959281,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1963,7 +1963,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3,
+					"uid": 114,
 					"instanceVariables": {
 						"Pistol": false,
 						"Health": 3
@@ -2009,7 +2009,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 6,
+					"uid": 115,
 					"instanceVariables": {
 						"BoomStick": false,
 						"Range": 0,
@@ -2056,7 +2056,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 33,
+					"uid": 116,
 					"instanceVariables": {},
 					"behaviors": {
 						"Turret": {
@@ -2099,7 +2099,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 7,
+					"uid": 117,
 					"instanceVariables": {
 						"FazeClan": false,
 						"Health": 3
@@ -2145,7 +2145,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 53,
+					"uid": 118,
 					"instanceVariables": {
 						"Pistol": false,
 						"Health": 3
@@ -2191,7 +2191,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 61,
+					"uid": 119,
 					"instanceVariables": {
 						"FazeClan": false,
 						"Health": 3
@@ -2229,7 +2229,7 @@
 					}
 				}
 			],
-			"sid": 629827420836265,
+			"sid": 699635499242261,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -2268,7 +2268,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 2,
+					"uid": 120,
 					"instanceVariables": {},
 					"behaviors": {
 						"8Direction": {
@@ -2301,7 +2301,7 @@
 					}
 				}
 			],
-			"sid": 609672311855618,
+			"sid": 956964792026038,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -2328,7 +2328,7 @@
 			"global": false
 		}
 	],
-	"sid": 115112008011979,
+	"sid": 641651184168912,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1708,

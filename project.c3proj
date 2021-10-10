@@ -129,9 +129,27 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Level 2"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Level 1 by Edwin"
+				],
+				"subfolders": [],
+				"name": "Easy Levels"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Medium Levels"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Hard Levels"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
