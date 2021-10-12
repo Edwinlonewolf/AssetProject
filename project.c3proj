@@ -140,7 +140,9 @@
 				"name": "Easy Levels"
 			},
 			{
-				"items": [],
+				"items": [
+					"Level 1 by Nuri"
+				],
 				"subfolders": [],
 				"name": "Medium Levels"
 			},
