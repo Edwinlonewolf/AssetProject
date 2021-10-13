@@ -1754,6 +1754,49 @@
 						"angle": 0.5926664382958378,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Launcher",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 303,
+					"instanceVariables": {},
+					"behaviors": {
+						"Turret": {
+							"properties": {
+								"range": 700,
+								"rate-of-fire": 1,
+								"rotate": false,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1321,
+						"y": 158,
+						"width": 95.4358423235212,
+						"height": 95.4358423235212,
+						"originX": 0.492,
+						"originY": 0.556,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 255600453946723,
@@ -2131,49 +2174,6 @@
 							1
 						],
 						"angle": 4.270080326885086,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Launcher",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 303,
-					"instanceVariables": {},
-					"behaviors": {
-						"Turret": {
-							"properties": {
-								"range": 700,
-								"rate-of-fire": 1,
-								"rotate": false,
-								"rotate-speed": 180,
-								"target-mode": "first-in-range",
-								"predictive-aim": false,
-								"projectile-speed": 500,
-								"use-collision-cells": true,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 1320,
-						"y": 158,
-						"width": 95.4358423235212,
-						"height": 95.4358423235212,
-						"originX": 0.492,
-						"originY": 0.556,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -2745,8 +2745,8 @@
 						}
 					},
 					"world": {
-						"x": 1571,
-						"y": 186,
+						"x": 1392,
+						"y": 326,
 						"width": 60,
 						"height": 60,
 						"originX": 0.8133333333333334,

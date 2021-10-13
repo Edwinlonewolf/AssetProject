@@ -782,9 +782,9 @@
 						}
 					},
 					"world": {
-						"x": 783.0363578192142,
-						"y": 868.4932049928298,
-						"width": 450.0107284236251,
+						"x": 783.0502412037687,
+						"y": 864.4811415997991,
+						"width": 458.03490325174624,
 						"height": 50,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1542,8 +1542,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 747,
-						"y": 739,
+						"x": 749,
+						"y": 698,
 						"width": 17,
 						"height": 20,
 						"originX": 0.5,
@@ -1605,16 +1605,16 @@
 				1
 			],
 			"backgroundColor": [
-				0.7019607843137254,
-				0.7019607843137254,
-				0.7019607843137254,
+				0.45098039215686275,
+				0.45098039215686275,
+				0.45098039215686275,
 				1
 			],
 			"isTransparent": false,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
-			"forceOwnTexture": false,
+			"forceOwnTexture": true,
 			"renderingMode": "3d",
 			"useRenderCells": false,
 			"blendMode": "normal",
