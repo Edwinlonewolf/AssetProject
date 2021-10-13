@@ -1,14 +1,14 @@
 {
-	"name": "Walls",
+	"name": "SpawnPoint",
 	"plugin-id": "Sprite",
-	"sid": 620101983247178,
+	"sid": 532621510333472,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 870087368051457
+			"sid": 860260576206109
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2844335,
+						"imageSpriteId": 1488083,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 505996128645817,
+				"sid": 932831238629501,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

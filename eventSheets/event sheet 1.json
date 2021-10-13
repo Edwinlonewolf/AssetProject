@@ -1014,9 +1014,22 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
+					"id": "set-position",
 					"objectClass": "Hero",
-					"sid": 402585784573467
+					"sid": 270921924106287,
+					"parameters": {
+						"x": "SpawnPoint.ImagePointX(0)",
+						"y": "SpawnPoint.ImagePointY(0)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 674893247641350,
+					"parameters": {
+						"variable": "HeroHealth",
+						"value": "10"
+					}
 				}
 			],
 			"sid": 927103827422086

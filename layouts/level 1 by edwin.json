@@ -2221,6 +2221,42 @@
 						"angle": 2.9749032412581995,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "SpawnPoint",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 337,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 47,
+						"y": 90,
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.247913656536968,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 629827420836265,
