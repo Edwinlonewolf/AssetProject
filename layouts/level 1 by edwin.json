@@ -2228,7 +2228,7 @@
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
-						"enable-collisions": true,
+						"enable-collisions": false,
 						"live-preview": false
 					},
 					"uid": 337,
@@ -2242,8 +2242,8 @@
 						}
 					},
 					"world": {
-						"x": 47,
-						"y": 90,
+						"x": 55.13935872418611,
+						"y": 91.71511441018168,
 						"width": 10,
 						"height": 10,
 						"originX": 0.5,
@@ -2316,8 +2316,8 @@
 						}
 					},
 					"world": {
-						"x": 65,
-						"y": 143,
+						"x": 84.97859788606087,
+						"y": 90.46371317625739,
 						"width": 60,
 						"height": 60,
 						"originX": 0.8133333333333334,
