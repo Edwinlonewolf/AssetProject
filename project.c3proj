@@ -322,7 +322,7 @@
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
+	"viewportWidth": 1708,
+	"viewportHeight": 670,
 	"firstLayout": null
 }
