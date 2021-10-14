@@ -76,6 +76,14 @@
 					"parameters": {
 						"target": "Hero"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Laser2",
+					"sid": 502406114316191,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 792560581812205
@@ -337,6 +345,31 @@
 				}
 			],
 			"sid": 801996541927587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 633389423544853,
+					"parameters": {
+						"object": "Launcher"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Launcher",
+					"sid": 581940462445836,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 401331227362200
 		},
 		{
 			"eventType": "comment",
@@ -944,6 +977,38 @@
 			"isOrBlock": true
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Launcher",
+					"sid": 349906985541214,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Launcher",
+					"sid": 408429001262073
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Hero",
+					"sid": 466371278105893,
+					"parameters": {
+						"instance-variable": "EnemiesKilled",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 325657764823686
+		},
+		{
 			"eventType": "comment",
 			"text": "Walls"
 		},
@@ -1026,10 +1091,16 @@
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 674893247641350,
+					"disabled": true,
 					"parameters": {
 						"variable": "HeroHealth",
 						"value": "10"
 					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 514586219430765
 				}
 			],
 			"sid": 927103827422086
@@ -1223,7 +1294,7 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "Hero",
-					"sid": 401131390170553,
+					"sid": 517109579955887,
 					"parameters": {
 						"instance-variable": "EnemiesKilled",
 						"comparison": 5,
@@ -1233,9 +1304,9 @@
 				{
 					"id": "is-overlapping-at-offset",
 					"objectClass": "Hero",
-					"sid": 194525212846158,
+					"sid": 377185589681342,
 					"parameters": {
-						"object": "Laser",
+						"object": "Laser2",
 						"offset-x": "-20",
 						"offset-y": "-20"
 					}
@@ -1243,21 +1314,19 @@
 			],
 			"actions": [
 				{
-					"id": "set-animation",
-					"objectClass": "Laser",
-					"sid": 106231767203621,
+					"id": "set-visible",
+					"objectClass": "Laser2",
+					"sid": 370541237452040,
 					"parameters": {
-						"animation": "\"Animation 2\"",
-						"from": "beginning"
+						"visibility": "visible"
 					}
 				},
 				{
-					"id": "go-to-layout",
+					"id": "go-to-nextprevious-layout",
 					"objectClass": "System",
-					"sid": 850161083630048,
-					"disabled": true,
+					"sid": 787603450798414,
 					"parameters": {
-						"layout": "Level 2 by Daniel"
+						"which": "next"
 					}
 				}
 			],

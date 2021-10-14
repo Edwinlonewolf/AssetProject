@@ -47,6 +47,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
@@ -58,14 +74,6 @@
 			"type": "behavior",
 			"id": "Turret",
 			"name": "Turret",
-			"author": "Scirra",
-			"version": "r260",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Bullet",
-			"name": "Bullet",
 			"author": "Scirra",
 			"version": "r260",
 			"bundled": false
@@ -92,14 +100,10 @@
 		"items": [
 			"Hero",
 			"Handgunner",
-			"Bullet",
 			"Shotgun",
 			"Sniper",
 			"Mouse",
 			"Keyboard",
-			"Bullet2",
-			"Bullet3",
-			"PlayerBullet",
 			"Walls",
 			"Camera",
 			"HealthStatus",
@@ -109,16 +113,28 @@
 			"Activationbutton",
 			"Missile",
 			"Launcher",
-			"Bullet4",
-			"Bullet5",
-			"Bullet6",
-			"Bullet7",
 			"Audio",
 			"Instructions",
 			"SpawnPoint",
-			"Laser2"
+			"Laser2",
+			"Background"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Bullet",
+					"Bullet2",
+					"Bullet3",
+					"Bullet4",
+					"Bullet5",
+					"Bullet6",
+					"Bullet7",
+					"PlayerBullet"
+				],
+				"subfolders": [],
+				"name": "Bullets"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
