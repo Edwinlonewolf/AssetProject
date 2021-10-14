@@ -115,7 +115,8 @@
 			"Bullet7",
 			"Audio",
 			"Instructions",
-			"SpawnPoint"
+			"SpawnPoint",
+			"Laser2"
 		],
 		"subfolders": []
 	},
