@@ -6,39 +6,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Background",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 402,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2,
-						"y": -1,
-						"width": 1705,
-						"height": 1137,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Bullet",
 					"properties": {
 						"initially-visible": true,
@@ -1318,42 +1285,6 @@
 					}
 				},
 				{
-					"type": "Laser",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 100,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1590,
-						"y": 1022,
-						"width": 57.83294155077862,
-						"height": 138.9821551313614,
-						"originX": 0.6896551724137931,
-						"originY": 0.49800796812749004,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 3.8768536515929544,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Walls",
 					"properties": {
 						"initially-visible": true,
@@ -1813,6 +1744,42 @@
 						"angle": 3.1540613624706593,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "GreenLaser",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 100,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1585,
+						"y": 1003,
+						"width": 64.95143373131809,
+						"height": 174.29667591599997,
+						"originX": 0.6896551724137931,
+						"originY": 0.49800796812749004,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.6919610255092434,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 985128329934566,
@@ -1825,9 +1792,9 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.8627450980392157,
+				0.8627450980392157,
+				0.8627450980392157,
 				1
 			],
 			"isTransparent": false,

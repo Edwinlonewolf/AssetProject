@@ -76,14 +76,6 @@
 					"parameters": {
 						"target": "Hero"
 					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Laser2",
-					"sid": 502406114316191,
-					"parameters": {
-						"visibility": "invisible"
-					}
 				}
 			],
 			"sid": 792560581812205
@@ -259,12 +251,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 157953241975571,
+					"sid": 348324228266137,
 					"parameters": {
 						"folder": "sounds",
 						"audio-file-name": "\"Handgun\"",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-5",
 						"tag-optional": "\"\""
 					}
 				}
@@ -400,12 +392,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 837643212418329,
+					"sid": 236587190157426,
 					"parameters": {
 						"folder": "sounds",
 						"audio-file-name": "\"Handgun\"",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-5",
 						"tag-optional": "\"\""
 					}
 				}
@@ -568,12 +560,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 186792453608473,
+					"sid": 792720356627233,
 					"parameters": {
 						"folder": "sounds",
 						"audio-file-name": "\"HeavyGun\"",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-5",
 						"tag-optional": "\"\""
 					}
 				}
@@ -737,12 +729,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 526054166791881,
+					"sid": 951363358555494,
 					"parameters": {
 						"folder": "sounds",
 						"audio-file-name": "\"HeavyGun\"",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-5",
 						"tag-optional": "\"\""
 					}
 				}
@@ -1088,16 +1080,6 @@
 					}
 				},
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 674893247641350,
-					"disabled": true,
-					"parameters": {
-						"variable": "HeroHealth",
-						"value": "10"
-					}
-				},
-				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
 					"sid": 514586219430765
@@ -1294,43 +1276,92 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "Hero",
-					"sid": 517109579955887,
+					"sid": 217639040904816,
 					"parameters": {
 						"instance-variable": "EnemiesKilled",
-						"comparison": 5,
-						"value": "7"
-					}
-				},
-				{
-					"id": "is-overlapping-at-offset",
-					"objectClass": "Hero",
-					"sid": 377185589681342,
-					"parameters": {
-						"object": "Laser2",
-						"offset-x": "-20",
-						"offset-y": "-20"
+						"comparison": 0,
+						"value": "0"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-visible",
-					"objectClass": "Laser2",
-					"sid": 370541237452040,
+					"id": "set-collisions-enabled",
+					"objectClass": "GreenLaser",
+					"sid": 610969882533740,
 					"parameters": {
-						"visibility": "visible"
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 843582004383324
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Hero",
+					"sid": 377044218906508,
+					"parameters": {
+						"instance-variable": "EnemiesKilled",
+						"comparison": 5,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "GreenLaser",
+					"sid": 463124955429298,
+					"parameters": {
+						"collisions": "enabled"
 					}
 				},
 				{
+					"id": "set-animation-frame",
+					"objectClass": "GreenLaser",
+					"sid": 468150332194952,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 115210165692420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Hero",
+					"sid": 351726087474977,
+					"parameters": {
+						"object": "GreenLaser"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "GreenLaser",
+					"sid": 607367072969753,
+					"parameters": {
+						"comparison": 0,
+						"number": "1"
+					}
+				}
+			],
+			"actions": [
+				{
 					"id": "go-to-nextprevious-layout",
 					"objectClass": "System",
-					"sid": 787603450798414,
+					"sid": 943082620504007,
 					"parameters": {
 						"which": "next"
 					}
 				}
 			],
-			"sid": 608003196520473
+			"sid": 754880305826836
 		}
 	],
 	"sid": 928993267018031

@@ -6,39 +6,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Background",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 401,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 3,
-						"y": -1,
-						"width": 1705,
-						"height": 1137,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Bullet",
 					"properties": {
 						"initially-visible": true,
@@ -1751,6 +1718,42 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "GreenLaser",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 45,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1586.5580475819538,
+						"y": 1006.6608004058526,
+						"width": 56.48147479227464,
+						"height": 174.29667591599997,
+						"originX": 0.6896551724137931,
+						"originY": 0.49800796812749004,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.6919610255092434,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 925114901514069,
@@ -1763,9 +1766,9 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.8627450980392157,
+				0.8627450980392157,
+				0.8627450980392157,
 				1
 			],
 			"isTransparent": false,
@@ -1911,42 +1914,6 @@
 							1
 						],
 						"angle": 6.27371032573698,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Laser2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 45,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1586.5580475819538,
-						"y": 1006.6608004058526,
-						"width": 56.48147479227464,
-						"height": 174.29667591599997,
-						"originX": 0.6896551724137931,
-						"originY": 0.49800796812749004,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.6919610255092434,
 						"zElevation": 0
 					}
 				}
@@ -2340,7 +2307,7 @@
 					"behaviors": {
 						"8Direction": {
 							"properties": {
-								"max-speed": 200,
+								"max-speed": 250,
 								"acceleration": 600,
 								"deceleration": 500,
 								"directions": "dir-8",
