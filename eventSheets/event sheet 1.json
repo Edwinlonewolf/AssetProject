@@ -1359,6 +1359,11 @@
 					"parameters": {
 						"which": "next"
 					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 820162973153275
 				}
 			],
 			"sid": 754880305826836
